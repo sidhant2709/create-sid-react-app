@@ -1,0 +1,27 @@
+{
+  "name": "create-sid-react-app",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/bin/index.js",
+  "bin": {
+    "create-sid-react-app": "./dist/bin/index.js"
+  },
+  "scripts": {
+    "dev": "tsx bin/index.ts",
+    "build": "tsc",
+    "link": "npm run build && npm link"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.5.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.14.0"
+  }
+}
